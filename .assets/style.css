@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fonte1: 'Comfortaa', cursive;
+    --fonte2: "Futura", Arial, Helvetica, sans-serif;
+    --fonte3: "VargroundR", Arial, Helvetica, sans-serif;
+    --cor1: #cc726b;
+    --cor2: #AADDFF;
+    --cor10: #f0b039;  
+    --cor11: #cccccc;  
+    --cor12: #AADDFF;
+    --sombra01: -1px -1px 1px rgba(80,80,80,0.6);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    flex: 1 1 100vw;
+}
+
+header, nav, main, aside, footer {
+
+    display: flex;
+    margin: 0px;
+}
+
+header {
+    flex: 1 1 100vw;
+    height: 320px;
+    background: var(--cor2);
+}
+
+header #logo {
+    flex: 0 1 400px;
+    background: var(--cor2);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: comfortaa;
+    text-align: center;
+    color:var(--cor1);
+    text-shadow: var(--sombra01);
+    
+}
+
+
+
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1 1 100vw;
+    /*Alinha na vertical*/
+    align-items: center;
+    /*Alinha na horizontal*/
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: 3%;
+    font-size: 20pt;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+}
+
+aside {
+    flex: 1 1 200px;
+}
+
+footer {
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.colorButton {
+    color: white
+}
+
+@media only screen and (max-width:923px) {
+    main {
+        height: calc(100vh - 330px);
+    }
+
+    aside {
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 717px) {
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    #openMenu{
+        position: fixed;
+        right: 35px;
+        top: 35px;
+    }
+
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+}
+
+@media screen (min-width: 340px) {
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    #openMenu{
+        position: fixed;
+        right: 35px;
+        top: 35px;
+    }
+
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+}   
