@@ -31,6 +31,14 @@ body {
     flex: 1 1 100vw;
 }
 
+.fundoTela {
+    width:300px;
+    height: 300px;
+    background-color: #cc726b;
+    background-image: url(.assets\images\01_imagem_consultorio_1920x1080.jpg)
+}
+
+
 header, nav, main, aside, footer {
 
     display: flex;
@@ -39,7 +47,7 @@ header, nav, main, aside, footer {
 
 header {
     flex: 1 1 100vw;
-    height: 310px;
+    height: 250px;
     background: var(--cor2);
 }
 
@@ -53,11 +61,11 @@ header #logo {
     text-align: center;
     color:var(--cor1);
     text-shadow: var(--sombra01);
-    
 }
 
 .logo {
-    width: 300px;
+    width: 250px;
+    margin-left:30px;
 }
 
 
@@ -205,12 +213,16 @@ button:hover{
 .card_especialidades_imagem{
     height: 150px;
     width: 150px;
+    /*
     background: #40BCD8;
+    */
+    text-align: center;
     margin: auto;
+    
 }
 
 .card_titulo {
-    /*text-align: center;*/
+    text-align: center;
     font-size: 1.5em;
     color: var(--cor1);
     text-shadow: var(--sombra02);
@@ -256,7 +268,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (max-width: 1280px) {
     #openMenu, #closeMenu {
         display: block;
     }
@@ -288,42 +300,8 @@ a {
     }
 }
 
-@media screen (min-width: 1280px) {
-    #openMenu, #closeMenu {
-        display: block;
-    }
 
-    #openMenu{
-        position: fixed;
-        right: 35px;
-        top: 35px;
-    }
-
-    #closeMenu {
-        position: fixed;
-        right: 15px;
-        top: 15px;
-    }
-
-    nav {
-        position: fixed;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.8);
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.3s;
-    }
-
-
-}
-
-
-@media screen (min-width: 640px) {
+@media screen (max-width: 640px) and (min-width:360px) {
     #openMenu, #closeMenu {
         display: block;
     }
