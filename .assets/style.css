@@ -36,7 +36,7 @@ header, nav, main, aside, footer {
 
 header {
     flex: 1 1 100vw;
-    height: 320px;
+    height: 310px;
     background: var(--cor2);
 }
 
@@ -46,7 +46,7 @@ header #logo {
     padding: 30px;
     align-items: center;
     justify-content: center;
-    font-family: comfortaa;
+    font-family: var(--fonte1)
     text-align: center;
     color:var(--cor1);
     text-shadow: var(--sombra01);
@@ -64,6 +64,7 @@ header #logo {
     padding: 0px 5px;
     cursor: pointer;
     display: none;
+    color: var(--cor1);
 }
 
 nav {
@@ -71,7 +72,8 @@ nav {
     /*Alinha na vertical*/
     align-items: center;
     /*Alinha na horizontal*/
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    padding: 15px
 }
 
 nav a {
@@ -80,17 +82,108 @@ nav a {
 }
 
 main {
+    display: block;
+    /*
     flex: 20 1 500px;
     height: calc(100vh - 224px);
+    */
 }
+
+
+/* Imagens*/
+/*
+img {
+    max-width: 100%;
+    display:block;
+}
+*/
+
+.apresentacao {
+    display: block;
+    padding: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.imagemDoutora {
+    display:flex;
+}
+
+.doutora0 {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #40BCD8;
+    background-color: transparent;
+    color: #40bcd8;
+    display: block;
+    margin: auto;
+}
+
+button:hover{
+    text-shadow: 1px 1px 3px #d5dbdb;
+    transform: scale(1.1)
+}
+
+.especilidades {
+    background-color: #f0b039;
+    padding: 25px;
+}
+
+.cards_especialidades {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.card_especialidades {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 5px 16px -5px var(--cor11); 
+    box-shadow: 0px 5px 16px -5px var(--cor11);
+    border: 5px solid var(--cor1);
+    border-radius: 30px 15px 30px 15px;
+    display: flex;
+    padding: 25px;
+    background: white;
+}
+
+.card_titulo {
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.card_especialidades_imagem{
+    height: 150px;
+    width: 150px;
+    background: #40BCD8;
+    align-items: center;
+    justify-content: center;
+}
+/* Imagens*/
 
 aside {
     flex: 1 1 200px;
 }
 
 footer {
+    display: block;
+    /*
     flex: 1 1 100vw;
     height: 100px;
+    */
 }
 
 a {
