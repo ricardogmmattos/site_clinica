@@ -11,7 +11,10 @@
     --cor10: #f0b039;  
     --cor11: #cccccc;  
     --cor12: #AADDFF;
-    --sombra01: -1px -1px 1px rgba(80,80,80,0.6);
+
+    --cor21: #c44a41;
+
+    --sombra01: -1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -101,14 +104,35 @@ img {
 .apresentacao {
     display: block;
     padding: 15px;
+    background-image: url("".assets\images\01_imagem_consultorio.jpg);
 }
 
 .title {
     text-align: center;
+    color: var(--cor21);
+    text-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--fonte1);
 }
 
+.conteiner_apresentacao {
+    display: grid;
+    background: #c44a41;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+}
+ /*
+.conteiner {
+    display: flex;
+    background: #c44a41;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+*/
 .imagemDoutora {
-    display:flex;
+    width: 10px;
+    height: 10px;
+    background: #f0b039;
 }
 
 .doutora0 {
@@ -119,26 +143,42 @@ img {
     
 }
 
+
+.btnContato {
+    font-family: "LatoHeavy", "Futura", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: #40BCD8;
+    padding:10px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+/*
 button {
     padding: 10px;
     border-radius: 10px;
     border: solid 2px #40BCD8;
     background-color: transparent;
     color: #40bcd8;
-    display: block;
-    margin: auto;
 }
 
 button:hover{
     text-shadow: 1px 1px 3px #d5dbdb;
     transform: scale(1.1)
 }
-
+*/
 .especilidades {
     background-color: #f0b039;
     padding: 25px;
 }
 
+/*cards_especialidades*/
 .cards_especialidades {
     display:flex;
     flex-wrap: wrap;
@@ -146,32 +186,35 @@ button:hover{
 
 .card_especialidades {
     max-width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px auto;
     -webkit-box-shadow: 0px 5px 16px -5px var(--cor11); 
     box-shadow: 0px 5px 16px -5px var(--cor11);
     border: 5px solid var(--cor1);
     border-radius: 30px 15px 30px 15px;
-    display: flex;
     padding: 25px;
     background: white;
-}
-
-.card_titulo {
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
 }
 
 .card_especialidades_imagem{
     height: 150px;
     width: 150px;
     background: #40BCD8;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
+
+.card_titulo {
+    /*text-align: center;*/
+    font-size: 1.5em;
+    color: var(--cor1);
+    text-shadow: var(--sombra02);
+}
+
+
+.card_sinopse_tratamento {
+    text-align: justify;
+    text-indent: 25px;
+}
+
 /* Imagens*/
 
 aside {
