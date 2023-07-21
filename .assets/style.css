@@ -49,14 +49,16 @@ header #logo {
     padding: 30px;
     align-items: center;
     justify-content: center;
-    font-family: var(--fonte1)
+    font-family: var(--fonte1);
     text-align: center;
     color:var(--cor1);
     text-shadow: var(--sombra01);
     
 }
 
-
+.logo {
+    width: 300px;
+}
 
 
 #openMenu, #closeMenu {
@@ -101,10 +103,15 @@ img {
 }
 */
 
+.imagem_consultorio {
+    width: 100vw;
+   /* background-image: url(.assets\images\01_imagem_consultorio.jpg);*/
+}
+
 .apresentacao {
     display: block;
     padding: 15px;
-    background-image: url("".assets\images\01_imagem_consultorio.jpg);
+   /* background-image: url("".assets\images\01_imagem_consultorio.jpg);*/
 }
 
 .title {
@@ -281,7 +288,42 @@ a {
     }
 }
 
-@media screen (min-width: 340px) {
+@media screen (min-width: 1280px) {
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    #openMenu{
+        position: fixed;
+        right: 35px;
+        top: 35px;
+    }
+
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+
+}
+
+
+@media screen (min-width: 640px) {
     #openMenu, #closeMenu {
         display: block;
     }
