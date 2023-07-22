@@ -111,13 +111,19 @@ img {
 
 .imagem_consultorio {
     width: 100vw;
+    margin; 0;
    /* background-image: url(.assets\images\01_imagem_consultorio.jpg);*/
+}
+
+figure {
+    margin: 0;
 }
 
 .apresentacao {
     display: block;
-    padding: 15px;
-   /* background-image: url("".assets\images\01_imagem_consultorio.jpg);*/
+    padding: 20px;
+    background-color: aquamarine;
+    width: 100vw;
 }
 
 .title {
@@ -128,20 +134,30 @@ img {
 }
 
 .conteiner_apresentacao {
-    display: grid;
+    display: flex;
     background: #c44a41;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-
+    width: 70%;
+    margin: auto;
 }
- /*
+
+.conteiner_foto {
+    height: 320px;
+    width: 320px;
+    background: blue;;
+}
+
+.description {
+    background: blueviolet;
+}
+
+    /*
 .conteiner {
     display: flex;
     background: #c44a41;
     flex-wrap: wrap;
     justify-content: center;
 }
-*/
+
 .imagemDoutora {
     width: 10px;
     height: 10px;
@@ -156,7 +172,7 @@ img {
     
 }
 
-
+*/
 .btnContato {
     font-family: "LatoHeavy", "Futura", Arial, Helvetica, sans-serif;
     font-size: x-large;
