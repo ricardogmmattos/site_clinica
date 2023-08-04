@@ -15,6 +15,16 @@
     --cor21: #c44a41;
 
     --sombra01: -1px 1px 4px rgba(0, 0, 0, 0.5);
+
+    --cor501:rgb(249,243,241);
+    --cor502: rgb(192,179,249);
+    --cor503: rgb(145,125,249);
+    --cor504: rgb(109,208,254);
+    --cor505: rgb(253,208,46);
+    --cor506: rgb(255,171,72);
+    --cor507: rgb(255,110,1);
+    --cor508: rgb(88,233,182);
+    --cor509: rgb(51,204,102);
 }
 
 
@@ -122,7 +132,7 @@ figure {
 .apresentacao {
     display: block;
     padding: 20px;
-    background-color: aquamarine;
+    background-color: var(--cor501);
     width: 100vw;
 }
 
@@ -141,13 +151,15 @@ figure {
 }
 
 .conteiner_foto {
-    height: 320px;
-    width: 320px;
+    width: 50%;
     background: blue;;
 }
 
 .description {
     background: blueviolet;
+    padding: 50px;
+    text-indent: 30px;
+    text-align: ;
 }
 
     /*
@@ -181,11 +193,8 @@ figure {
     padding:10px;
     color: white;
     border-radius: 20px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
+  
+   
 }
 
 /*
@@ -203,14 +212,17 @@ button:hover{
 }
 */
 .especilidades {
-    background-color: #f0b039;
+    background-color: var(--cor505);
     padding: 25px;
+    margin: auto;
 }
 
 /*cards_especialidades*/
 .cards_especialidades {
     display:flex;
     flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
 }
 
 .card_especialidades {
@@ -218,7 +230,7 @@ button:hover{
     margin: 25px auto;
     -webkit-box-shadow: 0px 5px 16px -5px var(--cor11); 
     box-shadow: 0px 5px 16px -5px var(--cor11);
-    border: 5px solid var(--cor1);
+    border: 5px solid var(--cor507);
     border-radius: 30px 15px 30px 15px;
     padding: 25px;
     background: white;
@@ -271,32 +283,9 @@ a {
     color: white
 }
 
-@media only screen and (max-width:923px) {
-    main {
-        height: calc(100vh - 330px);
-    }
 
-    header #logo {
-        flex: 0 1 400px;
-        padding: 30px;
-        font-family: var(--fonte1);
-        text-align: center;
-        color:var(--cor1);
-        text-shadow: var(--sombra01);
-        margin: auto;
-    }
-    
-    .logo {
-        width: 250px;
-    }
 
-    aside {
-        flex: 1 1 100vw;
-        height: 100px;
-    }
-}
-
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 800px) {
     #openMenu, #closeMenu {
         display: block;
     }
@@ -348,6 +337,42 @@ header #logo {
     text-align: center;
 }
 
+
+.conteiner_apresentacao {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+/*conteiner_foto
+description
+
+
+
+@media only screen and (max-width:923px) {
+    main {
+        height: calc(100vh - 330px);
+    }
+
+    header #logo {
+        flex: 0 1 400px;
+        padding: 30px;
+        font-family: var(--fonte1);
+        text-align: center;
+        color:var(--cor1);
+        text-shadow: var(--sombra01);
+        margin: auto;
+    }
+    
+    .logo {
+        width: 250px;
+    }
+
+    aside {
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
 @media screen (max-width: 640px) and (min-width:360px) {
     #openMenu, #closeMenu {
         display: block;
